@@ -36,7 +36,10 @@ public class NewsServiceImpl implements NewsService, RuntimeTestService {
 		// TOD0: Servcie Impl
 	}
 
-	
+
+	/**
+	 * Integrated Test Method
+	 */
 	@RuntimeTest
 	public void testUserServiceAvaible(){
 		ServiceTracker tracker = new ServiceTracker(context, UserService.class.getName(), null);
