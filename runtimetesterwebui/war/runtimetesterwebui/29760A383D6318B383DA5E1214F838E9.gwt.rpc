@@ -1,0 +1,17 @@
+com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException, true, true, true, true, com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException/3936916533, 3936916533
+de.propix.runtimetester.web.client.ResultDTO, true, true, false, false, de.propix.runtimetester.web.client.ResultDTO/1319226060, 1319226060
+de.propix.runtimetester.web.client.SerializableWhiteList, true, true, true, true, de.propix.runtimetester.web.client.SerializableWhiteList/1498114970, 1498114970
+de.propix.runtimetester.web.client.SubjectResultDTO, true, true, true, true, de.propix.runtimetester.web.client.SubjectResultDTO/1871589629, 1871589629
+[Lde.propix.runtimetester.web.client.SubjectResultDTO;, true, true, false, false, [Lde.propix.runtimetester.web.client.SubjectResultDTO;/430716759, 430716759
+de.propix.runtimetester.web.client.TestResultDTO, true, true, true, true, de.propix.runtimetester.web.client.TestResultDTO/3618882961, 3618882961
+[Lde.propix.runtimetester.web.client.TestResultDTO;, true, true, true, true, [Lde.propix.runtimetester.web.client.TestResultDTO;/548415374, 548415374
+de.propix.runtimetester.web.client.TestRunnerService, false, false, false, false, _, 3513919571
+java.lang.Exception, true, false, true, false, java.lang.Exception/1920171873, 1920171873
+java.lang.RuntimeException, true, false, true, false, java.lang.RuntimeException/515124647, 515124647
+java.lang.String, true, true, true, true, java.lang.String/2004016611, 2004016611
+java.lang.Throwable, true, false, true, false, java.lang.Throwable/2953622131, 2953622131
+java.util.ArrayList, true, true, true, true, java.util.ArrayList/3821976829, 3821976829
+java.util.Arrays$ArrayList, true, true, true, true, java.util.Arrays$ArrayList/1243019747, 1243019747
+java.util.LinkedList, true, true, true, true, java.util.LinkedList/1060625595, 1060625595
+java.util.Stack, true, true, true, true, java.util.Stack/1031431137, 1031431137
+java.util.Vector, true, true, true, true, java.util.Vector/3125574444, 3125574444

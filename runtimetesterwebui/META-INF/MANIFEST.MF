@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Runtimetester Core Web UI
+Bundle-SymbolicName: de.propix.runtimetester.web;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Import-Package: de.propix.runtimetester.core.runner,
+ javax.servlet;version="2.5.0",
+ javax.servlet.http;version="2.5.0",
+ org.eclipse.equinox.http.registry;version="1.0.0",
+ org.osgi.framework;version="1.3.0",
+ org.osgi.util.tracker;version="1.4.0"
+Export-Package: de.propix.runtimetester.web,
+ de.propix.runtimetester.web.client,
+ de.propix.runtimetester.web.server
+Bundle-ClassPath: lib/gwt-servlet.jar,
+ .
+Bundle-Activator: de.propix.runtimetester.web.server.Activator
