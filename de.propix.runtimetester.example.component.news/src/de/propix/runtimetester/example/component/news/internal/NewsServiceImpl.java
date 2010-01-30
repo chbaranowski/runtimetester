@@ -17,6 +17,9 @@ public class NewsServiceImpl implements NewsService, RuntimeTestService {
 		this.context = context;
 	}
 	
+	/**
+	 * Service Method.
+	 */
 	public void readMail(String messageId) {
 		ServiceTracker tracker = new ServiceTracker(context, UserService.class.getName(), null);
 		tracker.open();
