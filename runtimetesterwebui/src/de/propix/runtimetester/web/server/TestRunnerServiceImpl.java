@@ -8,7 +8,7 @@ import org.osgi.util.tracker.ServiceTracker;
 import com.google.gwt.user.server.rpc.RemoteServiceServlet;
 
 import de.propix.runtimetester.core.runner.Result;
-import de.propix.runtimetester.core.runner.RuntimeTester;
+import de.propix.runtimetester.core.runner.Tester;
 import de.propix.runtimetester.core.runner.SubjectResult;
 import de.propix.runtimetester.core.runner.TestResult;
 import de.propix.runtimetester.web.client.ResultDTO;
@@ -22,9 +22,9 @@ public class TestRunnerServiceImpl extends RemoteServiceServlet implements
 
 	public ResultDTO runTests() {
 		ServiceTracker serviceTracker = new ServiceTracker(
-				Activator.bundleContext, RuntimeTester.class.getName(), null);
+				Activator.bundleContext, Tester.class.getName(), null);
 		serviceTracker.open();
-		RuntimeTester runtimeTester = (RuntimeTester) serviceTracker
+		Tester runtimeTester = (Tester) serviceTracker
 				.getService();
 		Result result = runtimeTester.runAllTests();
 		ResultDTO webResult = map(result);

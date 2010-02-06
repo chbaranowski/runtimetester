@@ -10,11 +10,11 @@ import org.osgi.util.tracker.ServiceTracker;
 import de.propix.runtimetester.core.IntegratedTestService;
 import de.propix.runtimetester.core.IntegratedTest;
 import de.propix.runtimetester.core.runner.Result;
-import de.propix.runtimetester.core.runner.RuntimeTester;
+import de.propix.runtimetester.core.runner.Tester;
 import de.propix.runtimetester.core.runner.SubjectResult;
 import de.propix.runtimetester.core.runner.TestResult;
 
-public class OsgiRuntimeTesterImpl implements RuntimeTester {
+public class OsgiRuntimeTesterImpl implements Tester {
 
 	private final BundleContext context;
 	

@@ -1,6 +1,6 @@
 package de.propix.runtimetester.core.runner;
 
-public interface RuntimeTester {
+public interface Tester {
 
 	Result runAllTests();
 	

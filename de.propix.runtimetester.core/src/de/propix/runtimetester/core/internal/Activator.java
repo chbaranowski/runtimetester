@@ -3,7 +3,7 @@ package de.propix.runtimetester.core.internal;
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
 
-import de.propix.runtimetester.core.runner.RuntimeTester;
+import de.propix.runtimetester.core.runner.Tester;
 import de.propix.runtimetester.core.runner.internal.OsgiRuntimeTesterImpl;
 
 public class Activator implements BundleActivator {
@@ -12,7 +12,7 @@ public class Activator implements BundleActivator {
 	
 	public void start(BundleContext context) throws Exception {
 		service = new OsgiRuntimeTesterImpl(context);
-		context.registerService(RuntimeTester.class.getName(), service, null);
+		context.registerService(Tester.class.getName(), service, null);
 	}
 
 	public void stop(BundleContext context) throws Exception {
