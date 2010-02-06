@@ -3,7 +3,7 @@ package de.propix.runtimetester.example.component.news.internal;
 import org.osgi.framework.BundleContext;
 import org.osgi.util.tracker.ServiceTracker;
 
-import de.propix.runtimetester.core.RuntimeTest;
+import de.propix.runtimetester.core.IntegratedTest;
 import de.propix.runtimetester.core.RuntimeTestService;
 import de.propix.runtimetester.example.component.news.NewsService;
 import de.propix.runtimetester.example.component.user.UserService;
@@ -40,7 +40,7 @@ public class NewsServiceImpl implements NewsService, RuntimeTestService {
 	/**
 	 * Integrated Test Method
 	 */
-	@RuntimeTest
+	@IntegratedTest
 	public void testUserServiceAvaible(){
 		ServiceTracker tracker = new ServiceTracker(context, UserService.class.getName(), null);
 		tracker.open();
@@ -54,7 +54,7 @@ public class NewsServiceImpl implements NewsService, RuntimeTestService {
 		}
 	}
 	
-	@RuntimeTest
+	@IntegratedTest
 	public void testMailImapServerAvaible(){
 		// always Green
 	}

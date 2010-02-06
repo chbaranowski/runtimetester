@@ -8,7 +8,7 @@ import org.osgi.framework.ServiceReference;
 import org.osgi.util.tracker.ServiceTracker;
 
 import de.propix.runtimetester.core.RuntimeTestService;
-import de.propix.runtimetester.core.RuntimeTest;
+import de.propix.runtimetester.core.IntegratedTest;
 import de.propix.runtimetester.core.runner.Result;
 import de.propix.runtimetester.core.runner.RuntimeTester;
 import de.propix.runtimetester.core.runner.SubjectResult;
@@ -61,7 +61,7 @@ public class OsgiRuntimeTesterImpl implements RuntimeTester {
 		ArrayList<Method> testMethods = new ArrayList<Method>();
 		Method[] methods = subject.getClass().getMethods();
 		for (Method method : methods) {
-			if (method.isAnnotationPresent(RuntimeTest.class)) {
+			if (method.isAnnotationPresent(IntegratedTest.class)) {
 				testMethods.add(method);
 			}
 		}
