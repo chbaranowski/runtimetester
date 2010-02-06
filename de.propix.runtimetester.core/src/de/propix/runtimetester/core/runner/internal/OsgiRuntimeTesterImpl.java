@@ -7,7 +7,7 @@ import org.osgi.framework.BundleContext;
 import org.osgi.framework.ServiceReference;
 import org.osgi.util.tracker.ServiceTracker;
 
-import de.propix.runtimetester.core.RuntimeTestService;
+import de.propix.runtimetester.core.IntegratedTestService;
 import de.propix.runtimetester.core.IntegratedTest;
 import de.propix.runtimetester.core.runner.Result;
 import de.propix.runtimetester.core.runner.RuntimeTester;
@@ -25,7 +25,7 @@ public class OsgiRuntimeTesterImpl implements RuntimeTester {
 	public Result runAllTests() {
 		Result result = new Result();
 		ServiceTracker runtimeTestServiceTracker = new ServiceTracker(context,
-				RuntimeTestService.class.getName(), null);
+				IntegratedTestService.class.getName(), null);
 		runtimeTestServiceTracker.open();
 		try {
 			ServiceReference[] serviceReferences = runtimeTestServiceTracker.getServiceReferences();

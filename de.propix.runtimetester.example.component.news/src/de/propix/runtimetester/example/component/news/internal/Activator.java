@@ -5,7 +5,7 @@ import java.util.Hashtable;
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
 
-import de.propix.runtimetester.core.RuntimeTestService;
+import de.propix.runtimetester.core.IntegratedTestService;
 import de.propix.runtimetester.example.component.news.NewsService;
 
 public class Activator implements BundleActivator {
@@ -23,7 +23,7 @@ public class Activator implements BundleActivator {
 				simpleLogService, 
 				new Hashtable());
 		context.registerService(
-				RuntimeTestService.class.getName(), 
+				IntegratedTestService.class.getName(), 
 				simpleLogService, 
 				new Hashtable());
 	}

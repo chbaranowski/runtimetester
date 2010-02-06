@@ -6,7 +6,7 @@ import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
 import org.osgi.util.tracker.ServiceTracker;
 
-import de.propix.runtimetester.core.RuntimeTestService;
+import de.propix.runtimetester.core.IntegratedTestService;
 import de.propix.runtimetester.example.component.user.internal.UserServiceImpl;
 
 public class Activator implements BundleActivator {
@@ -23,7 +23,7 @@ public class Activator implements BundleActivator {
 				service, 
 				new Hashtable());
 		context.registerService(
-				RuntimeTestService.class.getName(), 
+				IntegratedTestService.class.getName(), 
 				service, 
 				new Hashtable());
 		

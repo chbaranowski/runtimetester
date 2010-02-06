@@ -1,10 +1,10 @@
 package de.propix.runtimetester.example.component.user.internal;
 
 import de.propix.runtimetester.core.IntegratedTest;
-import de.propix.runtimetester.core.RuntimeTestService;
+import de.propix.runtimetester.core.IntegratedTestService;
 import de.propix.runtimetester.example.component.user.UserService;
 
-public class UserServiceImpl implements UserService, RuntimeTestService {
+public class UserServiceImpl implements UserService, IntegratedTestService {
 
 	public String getUserName(String userId) {
 		if(userId.equals("TEST-ID")){

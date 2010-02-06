@@ -1,5 +1,5 @@
 package de.propix.runtimetester.core;
 
-public interface RuntimeTestService {
+public interface IntegratedTestService {
 	
 }

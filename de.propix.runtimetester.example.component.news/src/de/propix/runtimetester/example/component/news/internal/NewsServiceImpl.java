@@ -4,11 +4,11 @@ import org.osgi.framework.BundleContext;
 import org.osgi.util.tracker.ServiceTracker;
 
 import de.propix.runtimetester.core.IntegratedTest;
-import de.propix.runtimetester.core.RuntimeTestService;
+import de.propix.runtimetester.core.IntegratedTestService;
 import de.propix.runtimetester.example.component.news.NewsService;
 import de.propix.runtimetester.example.component.user.UserService;
 
-public class NewsServiceImpl implements NewsService, RuntimeTestService {
+public class NewsServiceImpl implements NewsService, IntegratedTestService {
 
 	
 	private BundleContext context;
