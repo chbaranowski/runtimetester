@@ -1,4 +1,4 @@
-package de.propix.runtimetester.core.runner.internal;
+package de.propix.runtimetester.core.runner.osgi;
 
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;

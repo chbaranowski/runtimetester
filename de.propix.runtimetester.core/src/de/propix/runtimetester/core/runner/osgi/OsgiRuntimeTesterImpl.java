@@ -1,4 +1,4 @@
-package de.propix.runtimetester.core.runner.internal;
+package de.propix.runtimetester.core.runner.osgi;
 
 import java.lang.reflect.Method;
 import java.util.ArrayList;
