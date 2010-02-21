@@ -17,8 +17,7 @@ import de.propix.runtimetester.web.client.SubjectResultDTO;
 import de.propix.runtimetester.web.client.TestResultDTO;
 import de.propix.runtimetester.web.client.TestRunnerService;
 
-public class TestRunnerServiceImpl extends RemoteServiceServlet implements
-		TestRunnerService {
+public class TestRunnerServiceImpl extends RemoteServiceServlet implements TestRunnerService {
 
 	public ResultDTO runTests() {
 		ServiceTracker serviceTracker = new ServiceTracker(

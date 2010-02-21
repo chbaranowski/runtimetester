@@ -1,10 +1,9 @@
-package de.propix.runtimetester.core.internal;
+package de.propix.runtimetester.core.runner.internal;
 
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
 
 import de.propix.runtimetester.core.runner.Tester;
-import de.propix.runtimetester.core.runner.internal.OsgiRuntimeTesterImpl;
 
 public class Activator implements BundleActivator {
 		
